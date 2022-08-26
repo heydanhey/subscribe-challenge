@@ -1,0 +1,17 @@
+{
+  "name": "subscribe-challenge",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "runner": "node index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.0.1",
+    "prettier": "^2.7.1"
+  }
+}

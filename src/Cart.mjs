@@ -39,8 +39,20 @@ export class Cart {
     this.#processInputFile(file).forEach(this.addItem);
   };
 
+  clear = () => {
+    this.items = [];
+  };
+
   addItem = ({ description, price, quantity }) => {
-    this.items.push(new Item(description, price, quantity));
+    const existingItemIndex = this.items.findIndex(
+      (item) => description === item.description
+    );
+
+    if (existingItemIndex > -1) {
+      this.items[existingItemIndex].quantity += quantity;
+    } else {
+      this.items.push(new Item(description, price, quantity));
+    }
   };
 
   subTotal = () => {

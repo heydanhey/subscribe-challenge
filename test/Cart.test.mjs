@@ -1,5 +1,5 @@
-import { Cart } from "./Cart.mjs";
-import { getFile } from "./run.mjs";
+import { Cart } from "../src/Cart.mjs";
+import { getFile } from "../src/run.mjs";
 
 let cart;
 

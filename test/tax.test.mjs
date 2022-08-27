@@ -1,4 +1,4 @@
-import { getTaxRate, BASE_SALES_TAX, IMPORT_TAX } from "./tax.mjs";
+import { getTaxRate, BASE_SALES_TAX, IMPORT_TAX } from "../src/tax.mjs";
 
 describe("getTaxRate helper method", () => {
   test("a basic item should have the base sales tax applied", async () => {

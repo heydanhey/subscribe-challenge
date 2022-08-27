@@ -1,4 +1,4 @@
-import { Item } from "./Item.mjs";
+import { Item } from "../src/Item.mjs";
 
 let item;
 

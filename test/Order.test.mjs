@@ -1,5 +1,5 @@
-import { Order } from "./Order.mjs";
-import { Cart } from "./Cart.mjs";
+import { Order } from "../src/Order.mjs";
+import { Cart } from "../src/Cart.mjs";
 
 let order, cart;
 

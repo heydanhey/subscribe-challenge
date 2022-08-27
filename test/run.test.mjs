@@ -1,4 +1,4 @@
-import { run, getFile } from "./run.mjs";
+import { run, getFile } from "../src/run.mjs";
 
 describe("Subscribe Challenge Test Runner", () => {
   test("input1.txt results to match output1.txt", async () => {

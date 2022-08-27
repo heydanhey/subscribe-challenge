@@ -25,3 +25,21 @@ npm run runner ./data/input2.txt
 ```
 npm test
 ```
+
+## Bundle JS assets for web
+
+```
+npm run build
+```
+
+## Run frontend on localhost
+
+```
+npm run dev
+```
+
+## Run linter
+
+```
+npm run lint
+```

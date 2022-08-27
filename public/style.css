@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: aqua;
+  padding: 10px;
+}
+
+#store ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#store li {
+  list-style-type: none;
+  margin: 20px;
+  padding: 10px;
+  background-color: lightgrey;
+}

@@ -5,13 +5,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "runner": "node index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "runner": "node ./src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "build": "rollup ./src/web.mjs --file ./public/bundle.js --format iife",
+    "dev": "concurrently \"npx serve ./public\" \"rollup ./src/web.mjs --file ./public/bundle.js --format iife --watch\"",
+    "lint": "npx prettier --write ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^7.3.0",
     "jest": "^29.0.1",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "rollup": "^2.78.1"
   }
 }
